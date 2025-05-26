@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khana catering||</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">Khana|খানা </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="login-btn" class="login-btn">Login</button></li>
+                <li><a href="#reservations" class="reservation-btn">Reservations</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Member Login</h2>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="form-footer">
+                    <a href="#forgot-password">Forgot password?</a>
+                    <p>Not a member? <a href="#register">Register here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Exquisite Culinary Creations</h1>
+            <p>Where every bite tells a story</p>
+            <a href="#reservations" class="btn">Reserve Your Table</a>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="section-title">Special Offer</h2>
+            <div class="offers-grid">
+                <!-- Offer items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Our Culinary Journey</h2>
+                <p>Founded in 1998 by Chef Marco Bellini, Gourmet Haven has been redefining fine dining with innovative techniques and the freshest ingredients sourced from local farmers and international markets.</p>
+                <p>Our Michelin-starred kitchen team brings together flavors from around the world to create unforgettable dining experiences.</p>
+                <div class="awards">
+                    <div class="award-item">
+                        <i class="fas fa-award"></i>
+                        <span>Michelin Star 2023</span>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-award"></i>
+                        <span>Best Restaurant Award</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/600x500?text=Restaurant+Chef" alt="Our Chef">
+                <div class="experience-badge">
+                    <span>25+</span>
+                    <span>Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservations" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">Book Your Table</h2>
+            <form id="reservation-form" class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="reservation-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="reservation-email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="tel" id="reservation-phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="reservation-guests" required>
+                            <option value="">Guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3-4">3-4 People</option>
+                            <option value="5-6">5-6 People</option>
+                            <option value="7+">7+ People</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="reservation-date" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="time" id="reservation-time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea id="reservation-notes" placeholder="Special Requests"></textarea>
+                </div>
+                <button type="submit" class="btn">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Gourmet Haven</h3>
+                    <p>123 Epicurean Avenue<br>Gastropolis, GT 10101</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <ul class="hours-list">
+                        <li><span>Monday - Thursday:</span> 11:30 AM - 10:00 PM</li>
+                        <li><span>Friday - Saturday:</span> 11:30 AM - 11:00 PM</li>
+                        <li><span>Sunday:</span> 10:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Photo Gallery</a></li>
+                        <li><a href="#events">Private Events</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#gift-cards">Gift Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and events</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Syed Nokibul Bashar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
